@@ -1,110 +1,157 @@
-/* Reset default styles and set box sizing */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Base body styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #6910f838;
-  color: #333;
-  line-height: 1.6;
-  
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: #ffffff;
 }
 
-/* Container for the cards */
-.container {
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(15, 23, 42, 0.95);
+  padding: 10px 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+nav a {
+  color: #cbd5e1;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
   padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #cbd5e1;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-/* Styles for individual cards */
-.card {
-  background-color: #0717f746;
-  border-radius: 8px;
+.timeline-item {
+  background: #1e293b;
+  border-left: 5px solid #38bdf8;
   padding: 20px;
-  width: 300px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.timeline-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
 }
 
-.card h3 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.card p {
-  font-size: 0.9rem;
-  margin-bottom: 15px;
-}
-
-/* Button styling */
-button {
-  background-color: #007BFF;
-  border: none;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #0057b363;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(218, 15, 15, 0.5); /* Black w/ opacity */
-}
-
-/* Footer Styles */
-footer {
-  padding: 20px;
-  text-align: center;
-  background-color: hwb(241 4% 9% / 0.205);
-  margin-top: 40px;
-}
-
-footer p {
-  margin-bottom: 10px;
+.timeline-item .circle {
+  position: absolute;
+  left: -30px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background: #0ea5e9;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
 }
 
-/* Icon container styles for cards */
-.icon-container {
+.timeline-item h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.timeline-item p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin: 5px 0 10px;
+}
+
+.more-text {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.more-text.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.read-more-btn {
+  margin-top: 8px;
+  background: transparent;
+  color: #38bdf8;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+/* Custom colors for each timeline item */
+.red    { border-color: #ef4444; } .red .circle    { background: #ef4444; } 
+.orange { border-color: #f97316; } .orange .circle { background: #f97316; }
+.green  { border-color: #10b981; } .green .circle  { background: #10b981; }
+.pink   { border-color: #ec4899; } .pink .circle   { background: #ec4899; }
+.teal   { border-color: #14b8a6; } .teal .circle   { background: #14b8a6; }
+.yellow { border-color: #eab308; } .yellow .circle { background: #eab308; }
+.blue   { border-color: #3b82f6; } .blue .circle   { background: #3b82f6; }
+.purple { border-color: #8b5cf6; } .purple .circle { background: #8b5cf6; }
+.indigo { border-color: #6366f1; } .indigo .circle { background: #6366f1; }
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #94a3b8;
   text-align: center;
-  margin-bottom: 10px;
 }
 
-.icon-container i {
-  font-size: 3rem;
-  color: #007BFF;
+.footer-icons {
+  margin-top: 10px;
 }
 
-.social-icons a {
+.footer-icons a {
+  color: #94a3b8;
   margin: 0 10px;
-  color: hwb(219 4% 3%);;
-  display: inline-block;
+  font-size: 1.2rem;
   transition: color 0.3s;
-  font-size: 1.5rem;
+}
+
+.footer-icons a:hover {
+  color: #38bdf8;
 }
