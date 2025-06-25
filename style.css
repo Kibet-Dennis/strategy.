@@ -175,3 +175,37 @@ footer {
 .footer-icons a:hover {
   color: #38bdf8;
 }
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: hsla(140, 11%, 89%, 0);
+  color: #11b91a; /* Changed to white for better icon visibility */
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  text-decoration: none;
+  font-size: 30px; /* Increased font size for icon clarity */
+  animation: bounce 2s infinite;
+  font-family: "Font Awesome 6 Free", "Segoe UI", sans-serif; /* Ensures icon is rendered properly */
+  font-weight: 900; /* Required for Font Awesome solid icons */
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
