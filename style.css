@@ -209,3 +209,23 @@ footer {
     transform: translateY(-8px);
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overscroll-behavior: none; /* Stops rubber-band scroll on some devices */
+}
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+.container, .timeline, .card {
+  max-width: 100%;
+  overflow: hidden;
+}
+footer {
+  background-color: #0f172a; /* Same as your dark background */
+  padding: 30px 0;
+  width: 100%;
+}
