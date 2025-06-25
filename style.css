@@ -60,7 +60,8 @@ h1 {
 
 .timeline-item {
   background: #1e293b;
-  border-left: 5px solid #38bdf8;
+  border-left: 5px solid #38bdf8;  /* existing left border */
+  border-right: 5px solid #38bdf8; /* NEW right border to match */
   padding: 20px;
   border-radius: 10px;
   position: relative;
@@ -69,7 +70,9 @@ h1 {
   width: 100%;
   max-width: 700px;
   box-sizing: border-box;
+  margin: 0 auto;
 }
+
 
 .timeline-item:hover {
   transform: translateY(-3px);
@@ -128,16 +131,15 @@ h1 {
   text-decoration: underline;
 }
 
-/* Custom colors for each timeline item */
-.red    { border-color: #ef4444; } .red .circle    { background: #ef4444; } 
-.orange { border-color: #f97316; } .orange .circle { background: #f97316; }
-.green  { border-color: #10b981; } .green .circle  { background: #10b981; }
-.pink   { border-color: #ec4899; } .pink .circle   { background: #ec4899; }
-.teal   { border-color: #14b8a6; } .teal .circle   { background: #14b8a6; }
-.yellow { border-color: #eab308; } .yellow .circle { background: #eab308; }
-.blue   { border-color: #3b82f6; } .blue .circle   { background: #3b82f6; }
-.purple { border-color: #8b5cf6; } .purple .circle { background: #8b5cf6; }
-.indigo { border-color: #6366f1; } .indigo .circle { background: #6366f1; }
+.red    { border-color: #ef4444; } .red .circle    { background: #ef4444; } .red    { border-right: 5px solid #ef4444; }
+.orange { border-color: #f97316; } .orange .circle { background: #f97316; } .orange { border-right: 5px solid #f97316; }
+.green  { border-color: #10b981; } .green .circle  { background: #10b981; } .green  { border-right: 5px solid #10b981; }
+.pink   { border-color: #ec4899; } .pink .circle   { background: #ec4899; } .pink   { border-right: 5px solid #ec4899; }
+.teal   { border-color: #14b8a6; } .teal .circle   { background: #14b8a6; } .teal   { border-right: 5px solid #14b8a6; }
+.yellow { border-color: #eab308; } .yellow .circle { background: #eab308; } .yellow { border-right: 5px solid #eab308; }
+.blue   { border-color: #3b82f6; } .blue .circle   { background: #3b82f6; } .blue   { border-right: 5px solid #3b82f6; }
+.purple { border-color: #8b5cf6; } .purple .circle { background: #8b5cf6; } .purple { border-right: 5px solid #8b5cf6; }
+.indigo { border-color: #6366f1; } .indigo .circle { background: #6366f1; } .indigo { border-right: 5px solid #6366f1; }
 
 .card {
   width: 100%;
