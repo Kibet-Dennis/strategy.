@@ -1,8 +1,10 @@
 body {
+  font-size: 16px;
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #0f172a, #1e293b);
   color: #ffffff;
+  text-align: center;
 }
 
 header {
@@ -33,10 +35,9 @@ nav a:hover {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 30px auto;
   padding: 20px;
-  text-align: center;
 }
 
 h1 {
@@ -53,6 +54,7 @@ h1 {
 .timeline {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
@@ -64,6 +66,9 @@ h1 {
   position: relative;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
 }
 
 .timeline-item:hover {
@@ -133,6 +138,19 @@ h1 {
 .blue   { border-color: #3b82f6; } .blue .circle   { background: #3b82f6; }
 .purple { border-color: #8b5cf6; } .purple .circle { background: #8b5cf6; }
 .indigo { border-color: #6366f1; } .indigo .circle { background: #6366f1; }
+
+.card {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  box-sizing: border-box;
+}
 
 footer {
   margin-top: 50px;
