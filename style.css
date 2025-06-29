@@ -249,3 +249,76 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+/* === GLOW EFFECTS FOR TIMELINE CARDS === */
+
+.timeline-item.red {
+  box-shadow: 0 0 15px #d72638;
+}
+
+.timeline-item.red:hover {
+  box-shadow: 0 0 30px #d72638;
+}
+
+.timeline-item.orange {
+  box-shadow: 0 0 15px #ff7e1b;
+}
+
+.timeline-item.orange:hover {
+  box-shadow: 0 0 30px #ff7e1b;
+}
+
+.timeline-item.green {
+  box-shadow: 0 0 15px #21c864;
+}
+
+.timeline-item.green:hover {
+  box-shadow: 0 0 30px #21c864;
+}
+
+.timeline-item.pink {
+  box-shadow: 0 0 15px #ff3b80;
+}
+
+.timeline-item.pink:hover {
+  box-shadow: 0 0 30px #ff3b80;
+}
+
+.timeline-item.teal {
+  box-shadow: 0 0 15px #1abc9c;
+}
+
+.timeline-item.teal:hover {
+  box-shadow: 0 0 30px #1abc9c;
+}
+
+.timeline-item.yellow {
+  box-shadow: 0 0 15px #f6c90e;
+}
+
+.timeline-item.yellow:hover {
+  box-shadow: 0 0 30px #f6c90e;
+}
+
+.timeline-item.blue {
+  box-shadow: 0 0 15px #3498db;
+}
+
+.timeline-item.blue:hover {
+  box-shadow: 0 0 30px #3498db;
+}
+
+.timeline-item.purple {
+  box-shadow: 0 0 15px #8e44ad;
+}
+
+.timeline-item.purple:hover {
+  box-shadow: 0 0 30px #8e44ad;
+}
+
+.timeline-item.indigo {
+  box-shadow: 0 0 15px #4b6cb7;
+}
+
+.timeline-item.indigo:hover {
+  box-shadow: 0 0 30px #4b6cb7;
+}
