@@ -1,146 +1,114 @@
-<!-- Full HTML updated with Read More buttons -->
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guru Creations Process</title>
-  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
- <body>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
   <div class="container">
     <h1>Our Process</h1>
     <p class="intro">
-     At <b>Guru Creations</b>, we believe in a collaborative approach to digital media and branding. From initial consultation to final delivery, our flexible and adaptive process ensures your goals are met with creative and technical precision.
-      We work closely with you to understand your vision, build a community around your brand, and create a digital presence that resonates with your audience.
-      Our team is dedicated to delivering high-quality results that not only meet but exceed your expectations. Whether it's through community building, conversion funnel design, or content strategy, we are here to support you every step of the way.
-      Explore our process below to see how we can help you achieve your digital goals.
+      At <b>Guru Creations</b>, we believe in a collaborative approach to digital media and branding. From initial consultation to final delivery, our flexible and adaptive process ensures your goals are met with creative and technical precision.
     </p>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item red">
-        <div class="circle">01</div>
-        <h3>Your Vision, Our Launchpad</h3>
-        <p>We co-create a digital strategy built around your vision.</p>
-        <div class="more-text">We start with what matters most: your unique idea, and build around it.
-          <br /> We listen, analyze, and then craft a strategy that aligns with your goals and audience needs.
-          <br /> Our team collaborates with you to ensure every aspect of your project reflects your vision and values.
-          <br /> From brainstorming sessions to detailed planning, we make sure your voice is heard at every step.
-        </div>
-        <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
-      </div>
-      <div class="timeline-item orange">
-        <div class="circle">02</div>
-        <h3>Community Building</h3>
-        <p>Grow an active community through storytelling and engagement.</p>
-        <div class="more-text">We craft authentic narratives and campaigns to form strong emotional bonds with your audience.
-          <br /> Our approach focuses on creating meaningful interactions that foster loyalty and trust.
-          <br /> We utilize social media, content marketing, and community events to build a vibrant ecosystem around your brand.
-          <br /> By understanding your audience's needs and interests, we create content that resonates and encourages participation.
-        </div>
-        <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
-      </div>
-      <div class="timeline-item green">
-        <div class="circle">03</div>
-        <h3>Conversion Funnel Design</h3>
-        <p>From discovery to conversion — we design it all.</p>
-        <div class="more-text">We develop smooth customer journeys that lead to results, from awareness to action.
-          <br /> Our team analyzes user behavior to create optimized pathways that guide visitors towards conversion.
-          <br /> We implement best practices in UX/UI design to ensure a seamless experience across all touchpoints.
-          <br /> By leveraging data and analytics, we continuously refine the funnel to maximize engagement and conversion rates.
-        </div>
-        <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
-      </div>
-      <div class="timeline-item pink">
-        <div class="circle">04</div>
-        <h3>Brand Positioning</h3>
-        <p>We define your value proposition and sharpen your brand voice.</p>
-        <div class="more-text">Through research and clarity, we ensure your brand communicates powerfully and consistently.
-          <br /> Our team conducts in-depth market analysis to identify your unique strengths and opportunities.
-          <br /> We craft a compelling brand narrative that resonates with your target audience and sets you apart from competitors.
-          <br /> By aligning your messaging with your core values, we create a strong foundation for all your marketing efforts.
-          <br /> We help you articulate what makes your brand special, ensuring it stands out in a crowded marketplace.
-        </div>
-        <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
-      </div>
-      <div class="timeline-item teal">
-        <div class="circle">05</div>
-        <h3>Content Strategy</h3>
-        <p>Tailored content that educates, engages, and converts.</p>
-        <div class="more-text">Every blog, video, and campaign is planned with purpose and designed to deliver value.
-          <br /> We focus on your audience's needs and preferences, ensuring that our content is relevant and impactful.
-          <br /> By leveraging data and insights, we continuously optimize our approach for maximum effectiveness.
-        </div>
-        <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
-      </div>
-      <div class="timeline-item yellow">
-        <div class="circle">06</div>
-        <h3>Social Media Integration</h3>
-        <p>Custom strategies from Reels to Threads.</p>
-        <div class="more-text">We craft platform-specific content strategies that amplify your reach and boost engagement.
-          <br /> Our team stays ahead of trends to ensure your brand remains relevant and visible across all social channels.
-          <br /> We create engaging content that resonates with your audience, driving interaction and building community.
-          <br /> By analyzing performance metrics, we refine our strategies to maximize impact and return on investment.
-        </div>
-        <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
-      </div>
-      <div class="timeline-item blue">
-        <div class="circle">07</div>
-        <h3>SEO & Analytics</h3>
-        <p>Rank higher with optimized pages and analytics tools.</p>
-        <div class="more-text">Using modern SEO techniques and data analysis, we help you outperform competition and improve visibility.
-          <br /> Our team implements on-page and off-page SEO strategies to enhance your search engine rankings.
-          <br /> We utilize advanced analytics tools to track performance, user behavior, and conversion metrics.
-          <br /> By continuously monitoring and adjusting our approach, we ensure your content reaches the right audience at the right time.
-          <br /> We provide detailed reports and insights to help you understand your digital presence and make informed decisions.
-        </div>
-        <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
-      </div>
-      <div class="timeline-item purple">
-        <div class="circle">08</div>
-        <h3>Paid Advertising</h3>
-        <p>Scale with Google Ads, Meta Ads, influencers, and more.</p>
-        <div class="more-text">We strategize and execute paid campaigns that maximize ROI and expand your audience reach fast.
-          <br /> Our team designs targeted ad campaigns that align with your business goals and budget.
-          <br /> We leverage data-driven insights to optimize ad performance and ensure maximum visibility.
-          <br /> By utilizing a mix of platforms, we create comprehensive advertising strategies that drive traffic and conversions.
-          <br /> We continuously monitor and adjust campaigns to achieve the best possible results for your investment.
-        </div>
-        <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
-      </div>
-    
-         <div class="timeline-item indigo">
-        <div class="circle">09</div>
-        <h3>Web & Mobile Optimization</h3>
-        <p>Mobile-first designs for speed and performance.</p>
-        <div class="more-text">We optimize every digital touchpoint to ensure responsiveness, speed, and peak user experience across all devices.
-          <br /> Our team focuses on creating fast-loading, user-friendly websites that perform well on all devices.
-          <br /> We implement best practices in responsive design to ensure a seamless experience for mobile and desktop users.
-          <br /> By optimizing images, code, and server performance, we enhance site speed and user satisfaction.
-          <br /> We conduct thorough testing to identify and resolve any issues that may affect performance or usability.
-        </div>
-        <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
-      </div>
-    <footer>
-      <p>Connect with us:</p>
-      <div class="footer-icons">
-        <a href="mailto:kibetdennis4136@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://instagram.com/yourprofile" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://facebook.com/denniskibet" title="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://linkedin.com/company/yourprofile" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://x.com/@Dennis_2kibet" title="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="https://twitch.tv/yourprofile" title="Twitch"><i class="fab fa-twitch"></i></a>
-        <a href="https://Telegram.me/yourprofile" title="Telegram"><i class="fab fa-telegram"></i></a>
-        <a href="https://youtube.com/@gurucreationltd" title="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="https://tiktok.com/@yourprofile" title="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="https://github.com/Kibet-Dennis" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://kibet-dennis.github.io/guru-creations/" title="Website"><i class="fas fa-globe"></i></a>
-        <a href="https://snapchat.com/yourprofile" title="Snapchat"><i class="fab fa-snapchat"></i></a>
-        <a href="https://wa.me/254700545425" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      </div>
-      <p>© 2025 Guru Creations. All rights reserved.</p>
-    </footer>
   </div>
-  <script src="script.js"></script>
+
+  <div class="timeline">
+    <div class="timeline-item red">
+      <h3><i class="fas fa-lightbulb animated-icon"></i> Your Vision, Our Launchpad</h3>
+      <p>We co-create a digital strategy built around your vision.</p>
+      <div class="more-text">We start with what matters most: your unique idea, and build around it. We listen, analyze, and then craft a strategy that aligns with your goals and audience needs.</div>
+      <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
+    </div>
+
+    <div class="timeline-item orange">
+      <h3><i class="fas fa-users animated-icon"></i> Community Building</h3>
+      <p>Grow an active community through storytelling and engagement.</p>
+      <div class="more-text">We craft authentic narratives and campaigns to form strong emotional bonds with your audience.</div>
+      <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
+    </div>
+
+    <div class="timeline-item green">
+      <h3><i class="fas fa-project-diagram animated-icon"></i> Conversion Funnel Design</h3>
+      <p>From discovery to conversion — we design it all.</p>
+      <div class="more-text">We develop smooth customer journeys that lead to results, from awareness to action.</div>
+      <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
+    </div>
+
+    <div class="timeline-item pink">
+      <h3><i class="fas fa-bullhorn animated-icon"></i> Brand Positioning</h3>
+      <p>We define your value proposition and sharpen your brand voice.</p>
+      <div class="more-text">Through research and clarity, we ensure your brand communicates powerfully and consistently.</div>
+      <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
+    </div>
+
+    <div class="timeline-item teal">
+      <h3><i class="fas fa-pen-nib animated-icon"></i> Content Strategy</h3>
+      <p>Tailored content that educates, engages, and converts.</p>
+      <div class="more-text">Every blog, video, and campaign is planned with purpose and designed to deliver value.</div>
+      <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
+    </div>
+
+    <div class="timeline-item yellow">
+      <h3><i class="fas fa-share-alt animated-icon"></i> Social Media Integration</h3>
+      <p>Custom strategies from Reels to Threads.</p>
+      <div class="more-text">We craft platform-specific content strategies that amplify your reach and boost engagement.</div>
+      <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
+    </div>
+
+    <div class="timeline-item blue">
+      <h3><i class="fas fa-chart-line animated-icon"></i> SEO & Analytics</h3>
+      <p>Rank higher with optimized pages and analytics tools.</p>
+      <div class="more-text">Using modern SEO techniques and data analysis, we help you outperform competition and improve visibility.</div>
+      <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
+    </div>
+
+    <div class="timeline-item purple">
+      <h3><i class="fas fa-bullseye animated-icon"></i> Paid Advertising</h3>
+      <p>Scale with Google Ads, Meta Ads, influencers, and more.</p>
+      <div class="more-text">We strategize and execute paid campaigns that maximize ROI and expand your audience reach fast.</div>
+      <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
+    </div>
+
+    <div class="timeline-item indigo">
+      <h3><i class="fas fa-mobile-alt animated-icon"></i> Web & Mobile Optimization</h3>
+      <p>Mobile-first designs for speed and performance.</p>
+      <div class="more-text">We optimize every digital touchpoint to ensure responsiveness, speed, and peak user experience across all devices.</div>
+      <button class="read-more-btn" onclick="toggleMore(this)">Read More</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Connect with us:</p>
+    <div class="footer-icons">
+      <a href="mailto:kibetdennis4136@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/yourprofile" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/denniskibet" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://linkedin.com/company/yourprofile" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/@Dennis_2kibet" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://twitch.tv/yourprofile" title="Twitch"><i class="fab fa-twitch"></i></a>
+      <a href="https://Telegram.me/yourprofile" title="Telegram"><i class="fab fa-telegram"></i></a>
+      <a href="https://youtube.com/@gurucreationltd" title="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://tiktok.com/@yourprofile" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://github.com/Kibet-Dennis" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://kibet-dennis.github.io/guru-creations/" title="Website"><i class="fas fa-globe"></i></a>
+      <a href="https://snapchat.com/yourprofile" title="Snapchat"><i class="fab fa-snapchat"></i></a>
+      <a href="https://wa.me/254700545425" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    Created by <strong>Dennis Kibet</strong>
+    <p>© 2025 Guru Creations. All rights reserved.</p>
+  </footer>
+  
+<script src="script.js"></script>
+
 </body>
 </html>
